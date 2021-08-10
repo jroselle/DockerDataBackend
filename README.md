@@ -8,15 +8,17 @@ This was hobbled together by reviewing the work of others and tailoring it to wh
 
 ## Run it
 
-docker run --name DataBackend --dns 8.8.8.8 ^
--e sa_password=ReplaceMe100! ^
--e ssrs_user=bob ^
--e ssrs_password=ReplaceMe100! ^
--e ACCEPT_EULA=Y ^
--p 8081:8081 -p 8901-8902:8901-8902 ^
--p 10250-10255:10250-10255 -p 10350:10350 ^
--p 1443:1443 -p 80:80 ^
--p 10000-10002:10000-10002 ^
+docker run --name DataBackend --dns 8.8.8.8 ^ \
+-e sa_password=ReplaceMe100! ^ \
+-e ssrs_user=bob ^ \
+-e ssrs_password=ReplaceMe100! ^ \
+-e ACCEPT_EULA=Y ^ \
+-p 8081:8081 -p 8901-8902:8901-8902 ^ \
+-p 10250-10255:10250-10255 -p 10350:10350 ^ \
+-p 1443:1443 -p 80:80 ^ \
+-p 10000-10002:10000-10002 ^ \
+--storage-opt size=150G ^ \
+--memory 6g ^ \
 dockerdatabackend
 
 
