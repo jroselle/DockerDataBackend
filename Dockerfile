@@ -26,7 +26,7 @@ ADD https://download.microsoft.com/download/7/c/1/7c14e92e-bdcb-4f89-b7cf-93543e
 ADD https://download.microsoft.com/download/1/a/a/1aaa9177-3578-4931-b8f3-373b24f63342/SQLServerReportingServices.exe SQLServerReportingServices.exe
 
 # NODE installer
-ADD https://nodejs.org/dist/v6.11.1/node-v6.11.1-x64.msi node.msi
+ADD https://nodejs.org/dist/v14.17.4/node-v14.17.4-x64.msi node.msi
 
 # Use the packages folder instead of the direct links above
 # Packages should contain
